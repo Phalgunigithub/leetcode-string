@@ -1,0 +1,30 @@
+java leetcode
+
+1)in initailizing index 
+	int start=0;
+        int end=s.length-1;
+not
+        // int start=s[0];
+        // int end=s[s.length-1];
+
+2)remember to write -1 or else indexoutofBound error
+  //int end=arr.length;
+		int end=arr.length-1;
+
+
+3)
+not wrote .toString while print array as
+In Java, the default implementation of toString() for an array does not provide the contents of the array; rather, it returns a representation that includes the type and hash code.
+
+wrong
+for(int i=0;i<arr.length;i++) {
+			System.out.println(arr.toString());
+		}
+
+right
+for(int i=0;i<arr.length;i++) {
+			System.out.println(arr[i]);
+		}
+
+2)if string reverse but array of char apply array rev logic
+
