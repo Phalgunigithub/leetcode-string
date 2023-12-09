@@ -1,0 +1,30 @@
+package string;
+
+import java.util.Scanner;
+
+public class BpalindromeAlphaNumeric {
+	
+	public static void main(String args[]) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		String str= sc.next();
+		
+		String alphanum=str.replaceAll("[^a-zA-Z0-9]", "");
+		
+		alphanum.toLowerCase();
+		
+		
+		
+		StringBuilder sb= new StringBuilder(str);
+		
+		if(alphanum.equals(sb.reverse().toString())) 
+			System.out.println("palin");
+			else
+				System.out.println(" not palin");
+				
+		
+		
+	}
+
+}
